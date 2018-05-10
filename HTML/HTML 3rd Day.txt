@@ -1,0 +1,709 @@
+I Want a padding b/w the text and background:
+padding:20px; 		20px in all side 
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	h2 {background-color:pink;
+	padding:20px;	
+	}
+	</style>
+
+</head>
+
+<body>
+
+<h2>I Love Sunny</h2>
+
+
+</body>
+
+</html>
+
+ 
+
+
+padding in particular direction:
+		padding-top:20px;
+		padding-bottom:20px;
+		padding-left:20px;
+		padding-right:20px;	
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	h2 {background-color:pink;
+	padding-bottom:20px;
+	padding-left:45px;
+		
+
+	}
+	</style>
+
+</head>
+
+<body>
+
+<h2>I Love Sunny</h2>
+
+
+</body>
+
+</html>
+ 
+
+
+************************************************************************************************
+
+Borders and Margin:
+
+Borders has three properties:
+Border colour
+Border width
+Border style	
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	h2 {background-color:red;
+	padding:20px;
+	border-color:green;
+	border-width:5px;
+	border-style:dashed;	
+
+	}
+	</style>
+
+</head>
+
+<body>
+
+<h2>I Love Sunny</h2>
+
+
+</body>
+
+</html>
+ 
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	h2 {background-color:red;
+	padding:20px;
+	border-top-color:green;
+	border-top-width:5px;
+	border-top-style:dotted;	
+
+	}
+	</style>
+
+</head>
+
+<body>
+
+<h2>I Love Sunny</h2>
+
+
+</body>
+
+</html>
+ 
+
+
+Margin:It is area outside the border and outside the padding basically it is the area basically that surrounds the entire element
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	
+	p {background-color:orange
+	
+	}
+	
+	</style>
+
+</head>
+
+<body>
+
+<p>This is a paragraph</p>
+<p>This is a paragraph</p>
+
+</body>
+
+</html>
+ 
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	
+	p {background-color:orange;
+	margin:1px;	
+	}
+	
+	</style>
+
+</head>
+
+<body>
+
+<p>This is a paragraph</p>
+<p>This is a paragraph</p>
+
+</body>
+
+</html>
+ 
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	
+	h4 {background-color:red;
+	color:white;
+	width:350px;
+	height:100px:	
+	border:3px solid black;
+		}
+	
+	</style>
+
+</head>
+
+<body>
+
+<h4>I Am going HIGH</h4>
+</body>
+
+</html>
+ 
+
+
+
+**********************************************************************************************
+How to style links:
+A link is composed of state.And state is when and how we press the link
+
+One link can have 4 different style
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+		
+	
+	
+	</style>
+
+</head>
+
+<body>
+<a href="http://google.com">Google</a>
+This is a universal link
+</body>
+
+</html>
+ 
+
+
+
+a:it is anchor
+a:link {}	:-besically the default link
+	
+text-decoration:none;		:		
+	
+a:visited{color:green}:Link which is already visited is to make green
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	a:link 	{color:red ;
+	text-decoration:none;}		
+	
+	a:visited{color:green;}
+	
+	</style>
+
+</head>
+
+<body>
+<a href="http://google.com">Google</a>
+This is a universal link
+</body>
+
+</html>
+ 
+
+
+
+
+	a:hover{background-color:blue;
+	color:white;
+	text-decoration:underline;
+	font-weight:bold;}
+The above means when cursor is on link than background is blue and link text color is white
+and link is underlined  and the get bold
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	a:link 	{color:red ;
+	text-decoration:none;}		
+	
+	a:visited{color:green;}
+	
+	a:hover{background-color:blue;
+	color:white;
+	text-decoration:underline;
+	font-weight:bold;}
+	
+	</style>
+
+</head>
+
+<body>
+<a href="http://google.com">Google</a>
+This is a universal link
+</body>
+
+</html>
+ 
+
+
+
+active state:a we are pressing down and my fingure is holding down the link for sometime this is the active state
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	a:link 	{color:red ;
+	text-decoration:none;}		
+	
+	a:visited{color:green;}
+	
+	a:hover{background-color:blue;
+	color:white;
+	text-decoration:underline;
+	font-weight:bold;}
+	a:active{background-color:orange;}	
+	</style>
+
+</head>
+
+<body>
+<a href="http://google.com">Google</a>
+This is a universal link
+</body>
+
+</html>
+ 
+***********************************************************************************************************************************************************
+
+Styling a table: 
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	table {border:3px solid blue;}
+	tr {background-color:red;}
+	</style>
+
+</head>
+
+<body>
+<table>
+
+	<tr>
+	<td>Hi Guys</td>
+	<td>Hi Guys</td>
+	<td>Hi Guys</td>
+	</tr>
+
+
+	<tr>
+	<td>Hi Guys</td>
+	<td>Hi Guys</td>
+	<td>Hi Guys</td>
+
+	</tr>
+
+</table>
+
+
+</body>
+
+</html>
+ 
+
+
+Whenever we apply style to the individual pieces of data it doesnot oiverride the table rows.The table row stays and table data gets inherited
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	table {border:3px solid blue;}
+	tr {background-color:red;}
+	td {border :2px dashed yellow;}
+	</style>
+
+</head>
+
+<body>
+<table>
+
+	<tr>
+	<td>Hi Guys</td>
+	<td>Hi Guys</td>
+	<td>Hi Guys</td>
+	</tr>
+
+
+	<tr>
+	<td>Hi Guys</td>
+	<td>Hi Guys</td>
+	<td>Hi Guys</td>
+
+	</tr>
+
+</table>
+
+
+</body>
+
+</html>
+ 
+
+Style unordered list:
+
+Change bullets:
+	ul{list-style-type:sqaure;}
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	ul {list-style-type:circle;}
+ 
+
+	</style>
+
+</head>
+
+<body>
+<ul>
+	<li>apple</li>
+	<li>pie</li>
+	<li>strawberry</li>
+	
+</ul>
+
+</body>
+
+</html>
+ 
+
+
+To Make our own images as bullets 
+
+	ul{ list-style-image:url(pic.jpg)}
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	ul{ list-style-image:url(green-bullet-large.png)}
+ 
+
+	</style>
+
+</head>
+
+<body>
+<ul>
+	<li>apple</li>
+	<li>pie</li>
+	<li>strawberry</li>
+	
+</ul>
+
+</body>
+
+</html>
+ 
+
+
+ 
+To make a border arround unordered list 
+	ul{ border :1px solid red;}
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	ul{ border :1px solid red;}
+ 
+
+	</style>
+
+</head>
+
+<body>
+<ul>
+	<li>apple</li>
+	<li>pie</li>
+	<li>strawberry</li>
+	
+</ul>
+
+</body>
+
+</html>
+ 
+
+
+ 
+
+
+To Remove bullets for unordered list:
+	list-style-type:none;}
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	ul{ border :1px solid red;
+	list-style-type:none;}
+ 
+
+	</style>
+
+</head>
+
+<body>
+<ul>
+	<li>apple</li>
+	<li>pie</li>
+	<li>strawberry</li>
+	
+</ul>
+
+</body>
+
+</html>
+ 
+
+
+By default browser gives left pading to unordered list In order to fix padding
+we nedd expicitly set pading to zero
+
+But we can give padding according to my list
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	ul{ border :1px solid red;
+	list-style-type:none;
+	padding:0;}
+ 
+
+	</style>
+
+</head>
+
+<body>
+<ul>
+	<li>apple</li>
+	<li>pie</li>
+	<li>strawberry</li>
+	
+</ul>
+
+</body>
+
+</html>
+ 
+**********************************************************************************************888888
+How to apply style to more than one element:
+
+h1,p {}
+
+all elements should be seperated by an comma(,)
+This could saves my time
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	h1,p {color:red;} 
+
+	</style>
+
+</head>
+
+<body>
+
+This is simple text 
+<h1>Right one IN</h1>
+<p>In a paragraph</p>
+</body>
+
+</html>
+ 
+
+
+Span:Effect a group of text
+
+Here only span is effected
+span is a keyword
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	span {font-weight:bold;
+	color:green;
+}
+
+	</style>
+
+</head>
+
+<body>
+
+<p>This is my 1st Para and <span>I love To eat</span></p>
+
+</body>
+
+</html>
+ 
+ 

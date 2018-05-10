@@ -1,0 +1,480 @@
+
+
+In order to get bunch of different photos in same size we need to give a kind of guide-line like
+	img {set maximum height and width}
+
+
+eg.	img {max-height:200px;
+	max-width:200px;}	
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+
+
+	</style>
+
+</head>
+<img src="MyFace.jpg"/>
+<img src="pic1.jpg"/>
+<img src="pic2.jpg"/>
+
+<body>
+
+
+
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	img {max-height:200px;
+	max-width:200px;}	
+
+
+	</style>
+
+</head>
+<img src="MyFace.jpg"/>
+<img src="pic1.jpg"/>
+<img src="pic2.jpg"/>
+
+<body>
+
+
+
+</body>
+
+</html>
+
+*******************************************************************************************************************************************************
+
+Forms:
+
+It is basically a way to input data in the website say give user name,selecting pictures,selecting gender, ...etc
+
+Basically use in computer programming
+
+<form></form>
+
+All our button,boxes,radio button should be within the forms
+
+<input    what type of input    name for that input >:To Imput our data 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+
+<body>
+
+	<form>
+	UserName:<input type="text" name="username" />
+
+	</form>
+
+
+</body>
+
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+
+<body>
+
+	<form>
+	UserName:<input type="text" name="username" size="50"/>
+
+	</form>
+
+
+</body>
+
+</html>
+
+
+No to limit maximum character in a input type text we can use attribute i.e maxlength="size"
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+
+<body>
+
+	<form>
+	UserName:<input type="text" name="username" size="50"  maxlength="10"/>
+
+	</form>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+To give default name for that input use attribute value
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+
+<body>
+
+	<form>
+	UserName:<input type="text" name="username" value="Enter Your Name"/>
+
+	</form>
+
+
+</body>
+
+</html>
+
+***************************************************************************************************************************************
+Types of input:
+
+
+
+
+
+
+Radio buttons is a bunch of buttons but we can select only one buttons
+
+eg.All the radio button with  name as sex belong to same group(same type same name but different values)
+
+
+Checkbox:It is more or like radio buttons but we can check as many as we can all or none or some 
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+
+<body>
+
+	<form>
+	UserName:<input type="text" name="username" value="Enter Your Name"/>
+	<br/>
+
+	Male: <input type="radio" name="sex" value="male" >
+	Female:<input type="radio" name="sex" value="female" >
+	TransGender:<input type="radio" name="sex" value="transgender" >
+	<br/>
+	<p>Select the foods that you like to order!!!!!!!!!!!!!!!</p>
+	Pizza <input type="checkbox" name="food" value ="Pizza"/>
+	Burger<input type="checkbox" name="food" value ="Burger"/>
+	Strawberry Juice <input type="checkbox" name="food" value ="Strawberry "/>
+	Mangao Juice<input type="checkbox" name="food" value ="Mangao "/>
+	Banana Juice<input type="checkbox" name="food" value ="Banana "/>
+	Amla Juice<input type="checkbox" name="food" value ="Amla "/>
+	Paneer Butter Masala<input type="checkbox" name="food" value ="Paneer Buttter Masala"/>
+	Chillie Paneer<input type="checkbox" name="food" value ="Chillie Paneer"/>
+	Mix Veg<input type="checkbox" name="food" value ="Mix Veg"/>
+	Kofta<input type="checkbox" name="food" value ="Paneer Kofta"/>
+ 			
+
+	</form>
+
+
+</body>
+
+</html>
+
+
+**************************************************************************************************************************************
+Drop Down list: 
+In Order to conserver space  Drop Down list is  used
+It takes space of a single element but allows us to have all those option inside it
+In order to make a drop down list we need two tags
+1.Select 
+2.Option
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+
+<body>
+
+	<form>
+ 	<select name="activities">		
+	<option value="play">Play Guitar</option>	
+	</select >
+	</form>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+And the width of the box will be the longest word in that box
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+
+<body>
+	<form>
+	What Do You Want To Do Today?
+
+ 	<select name="activities">		
+	<option value="play">Play Guitar</option>	
+	<option value="shave">Shave Beard</option>	
+	<option value="comb">Comb My Hair</option>	
+	<option value="walk">Take a walk</option>	
+	</select >
+	</form>
+
+
+</body>
+
+</html>
+
+
+********************************************************************************************************
+
+Text Area:
+
+<text area></text area>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+
+<body>
+	<form>
+	Tell Me About Yourself:
+	<br />	
+	<textarea name="biography">
+	Type Something Interesting About You
+	</textarea >
+	</form>
+
+
+</body>
+
+</html>
+
+
+
+
+
+Make wider and taller
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+
+<body>
+	<form>
+	Tell Me About Yourself:
+	<br />	
+	<textarea name="biography" rows="8" cols="80">
+	Type Something Interesting About You
+	</textarea >
+	</form>
+
+
+</body>
+
+</html>
+
+************************************************************************************************************************************************************
+
+Types of Field:
+1.Password
+Password:<input type="password" name="pwd"/>
+We can give max and min length of password or characters to be included in password .....etc
+
+
+2.File Field
+<input type="file" name="Sunny's File"/>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+
+<body>
+	<form>
+
+
+	Password:<input type="password" name="pwd"/>
+
+	<p>Now Submit a File!!</p>
+	<input type="file" name="Sunny's File"/>
+
+	</form>
+
+
+</body>
+
+</html>
+
+
+
+********************************************************************************************************************
+
+
+
+
+Submit:
+
+
+action: says what we want to do with all the data
+method: 
+1.get 
+2.post
+
+And methods is basically the way our bowser sends data to the action
+
+<form action="file name " method="post">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+
+<body>
+	<form action="file name " method="post">
+	Username:<input type="text" name="username"/>
+	<br/>
+	Password:<input type="password" name="pwd"/>
+
+
+	<br/>
+	<input type="submit" value="Submit"/>
+	</form>
+
+
+</body>
+
+</html>

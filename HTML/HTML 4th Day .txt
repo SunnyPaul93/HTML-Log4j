@@ -1,0 +1,954 @@
+DIV Element:
+Div element gives us the aabiltiy to define section on our webpage,to place elements exactly where we want
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	div { border :2px solid red;
+	position : absolute;
+	width :300px;
+	}
+	</style>
+
+</head>
+
+
+<body>
+
+<div>My Name  is Sunny</div>
+
+
+</body>
+
+</html>
+
+
+
+
+To change the position of this box we need cordinates.
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	div { border :2px solid red;
+	position : absolute;
+	width :300px;
+	top:40px;
+	left:35px;
+	}
+	</style>
+
+</head>
+
+
+<body>
+
+<div>My Name  is Sunny</div>
+
+
+</body>
+
+</html>
+
+
+
+
+
+If I have multiple boxes(div) and all are div, so how does the browser know what div should go where 
+Ans:So this Could be possible with the help of ID
+
+
+For ID use '#'
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+
+	#Sunny {border :2px solid red;
+	position :absolute;
+	top:15px;
+	right:25px;
+	}
+
+
+
+	#Hogward {border :2px solid green;
+	position :absolute;
+	top:65px;
+	left:5px;
+	}
+
+
+	</style>
+
+</head>
+
+
+<body>
+
+<div id="Sunny">My Name  is Sunny</div>
+<div id="Hogward">I Love Songs</div>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+************************************************************************************************************************
+
+Control style by using class:
+Class is similar to span in sense that we can effect the same element in different way
+
+
+Say If I have 8 paragraph and we apply style to the paragraph than it will effect all 8 paragraphs
+Now I want half of my paragraph to be red and half as green for this we need class
+
+
+For class use '.'
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	p {color:red;}
+
+	</style>
+
+</head>
+<p>I want the text to be red!</p>
+<p>I wish I could Fly!!!!!!!!!</p>
+
+<body>
+
+
+
+</body>
+
+</html>
+
+
+
+In order to make any paragraph,title or any thing belong to Say here redText we need to add
+attribute called class in some paragraph,title .....etc with that class name
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	.redText {color:red;}
+	.niceLook {color:green;}
+	</style>
+
+</head>
+<p class="redText">I want the text to be red!</p>
+<p class="niceLook">I wish I could Fly!!!!!!!!!</p>
+
+<body>
+
+
+
+</body>
+
+</html>
+
+*************************************************************************************************************************************************
+How to style a child selector:
+
+Child in XHTML is a tag inside another tag
+Here head is child of html,body is child of html , style is a child of head
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	
+
+
+
+
+	</style>
+
+</head>
+
+
+<body>
+
+<a href="https://www.youtube.com">First</a>
+
+
+<h2><a href="https://www.facebook.com">Second</a></h2>
+
+<p><a href="https://www.instagram.com">Third</a></p>
+
+</body>
+
+</html>
+
+
+
+
+
+
+p>a:All children a with a parent of p i.e all link tags inside paragraph
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	p > a {color:red;
+	font-size:30px;}
+	
+
+
+
+
+	</style>
+
+</head>
+
+
+<body>
+
+<a href="https://www.youtube.com">First</a>
+
+
+<h2><a href="https://www.facebook.com">Second</a></h2>
+
+<p><a href="https://www.instagram.com">Third</a></p>
+
+</body>
+
+</html>
+
+
+
+************************************************************************************************************
+
+
+Pseudo elements:
+Pseudo elements is first letter of each of the paragraph
+Pseudo elements are built in
+
+p:first-letter:Built in 
+
+ 
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style>	
+	p:first-letter  {font -weight:bold;
+	font-size:40px;
+	color :red;}
+
+
+
+	</style>
+
+</head>
+
+
+<body>
+<p>HI GUYS HOW ARE YOU</p>
+<p>Its raining heavily</p>
+<p>Oh my God</p>
+
+</body>
+
+</html>
+
+
+***************************************************************************************************
+
+External style sheet:
+
+Apply one style to our entire webside i.e on every single webpage
+(say index.html,secondIndex.html)
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+</head>
+
+
+<body>
+<h1>HI GUYS Welcome to my Page</h1>
+<p>Its raining heavily</p>
+<a href="secondIndex.html">Click ON ME</p></a>
+
+</body>
+
+</html>
+
+
+copy the above in secondIndex page also
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+</head>
+
+
+<body>
+<h1>HI GUYS Welcome to my Second Page</h1>
+<p>Its raining heavily</p>
+<a href="index.html">Click ON ME</p></a>
+
+</body>
+
+</html>
+
+
+
+
+Now Create a new HTML file
+
+h1 {color:green;}
+
+p{font-family:Tahoma;
+	color:red;
+	font-size:20px;}
+
+a {color:orange;}
+
+
+Now save This file as CSS file In the same folder where my html web pages are there 
+
+Now go to our individual webpages and tell we want to use this file instead of style
+
+for this we use the attribute :<link rel="stylesheet" type of file what we want to link to/>
+
+
+
+
+h1 {color:green;}
+
+p{font-family:Tahoma;
+	color:red;
+	font-size:20px;}
+
+a {color:orange;}
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<link rel="stylesheet" type ="text/css" href="heyMain.css"/ ">
+
+<head>
+</head>
+
+
+<body>
+<h1>HI GUYS Welcome to my Page</h1>
+<p>Its raining heavily</p>
+<a href="secondIndex.html">Click ON ME</p></a>
+
+</body>
+
+</html>
+
+
+copy the above in secondIndex page also
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<link rel="stylesheet" type ="text/css" href="heyMain.css"/ ">
+
+
+</head>
+
+
+<body>
+<h1>HI GUYS Welcome to my Second Page</h1>
+<p>Its raining heavily</p>
+<a href="index.html">Click ON ME</p></a>
+
+</body>
+
+</html>
+**************************************************************************************************
+
+Overridding style:
+
+Though in heyMain.css we give h1 color as red but we can override this in a particular  web pages 
+
+In Order to Ovrride a style we can do it
+
+<style type="text/css">
+
+</style >
+
+Here we are overridding heyMain.css color tag in internal style tags in our webpages
+
+
+h1 {color:green;}
+
+p{font-family:Tahoma;
+	color:red;
+	font-size:20px;}
+
+a {color:orange;}
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<link rel="stylesheet" type ="text/css" href="heyMain.css"/ ">
+
+	<style type="text/css">
+
+	h1{color:yellow;}		//here first color is red from css file and than set to yellow
+	</style >
+
+<head>
+</head>
+
+
+<body>
+<h1>HI GUYS Welcome to my Page</h1>
+<p>Its raining heavily</p>
+<a href="secondIndex.html">Click ON ME</p></a>
+
+</body>
+
+</html>
+
+
+
+copy the above in secondIndex page also
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<link rel="stylesheet" type ="text/css" href="heyMain.css"/ ">
+
+
+</head>
+
+
+<body>
+<h1>HI GUYS Welcome to my Second Page</h1>
+<p>Its raining heavily</p>
+<a href="index.html">Click ON ME</p></a>
+
+</body>
+
+</html>
+
+
+
+
+***************************************************************************************************************************************************************
+How to layer website:
+Positioning:
+
+
+
+Absolute positioning:
+
+Absolute moves from top left point on my screen
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<style type="text/css">
+	#apples {border:2px solid red;
+	position :absolute;
+	width :150px;
+	height:175px;
+	top:60px;
+	left:30px;
+	}
+	</style>
+
+</head>
+
+
+<body>
+
+<div id="apples">An Apple a day keeps the doctor away</div> 
+<div id="knock">The exam is knocking at the door </div> 
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<style type="text/css">
+	#apples {border:2px solid red;
+	position :absolute;
+	width :150px;
+	height:175px;
+	top:60px;
+	left:30px;
+	}
+	#knock {border:2px solid blue;
+	position :absolute;
+	width :150px;
+	height:175px;
+	top:40px;
+	left:120px;
+	}
+	</style>
+
+</head>
+
+
+<body>
+
+<div id="apples">An Apple a day keeps the doctor away</div> 
+<div id="knock">The exam is knocking at the door </div> 
+
+
+</body>
+
+</html>
+
+
+
+
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<style type="text/css">
+	#burger {border:2px solid green;
+	position :absolute;
+	top:60px;
+	left:70px;
+	}
+	</style>
+
+</head>
+
+
+<body>
+
+<p id="burger">Can you just see me?</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+
+</body>
+
+</html>
+
+
+********************************************************************************************************
+
+Different types of positioning:
+
+Relative Positioning:
+ 
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<style type="text/css">
+	#third {border:2px solid green;
+	position :absolute;
+	top:60px;
+	left:30px;
+	}
+	</style>
+
+</head>
+
+
+<body>
+
+<p>First</p>
+<p>Second</p>
+<p id="third">Third</p>
+<p>Fourth</p>
+
+</body>
+
+</html>
+
+
+
+
+
+
+Here in relative where my third would be in position from there it move to that many pixel
+i.e top 60px and left 30px from that relative position of third which is normally placed
+
+Relative move from where it is relation to the rest 
+ 
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<style type="text/css">
+	#third {border:2px solid green;
+	position :relative;
+	top:60px;
+	left:30px;
+	}
+	</style>
+
+</head>
+
+
+<body>
+
+<p>First</p>
+<p>Second</p>
+<p id="third">Third</p>
+<p>Fourth</p>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<style type="text/css">
+	#burger {border:2px solid green;
+	position :relative;
+	top:60px;
+	left:70px;
+	}
+	</style>
+
+</head>
+
+
+<body>
+
+<p id="burger">Can you just see me?</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+
+</body>
+
+</html>
+
+
+
+
+
+Fixed Positioning:
+
+Normally not to use this positioning
+
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<style type="text/css">
+	#burger {border:2px solid green;
+	position :fixed;
+	top:60px;
+	left:70px;
+	}
+	</style>
+
+</head>
+
+
+<body>
+
+<p id="burger">Can you just see me?</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+<p>I am kind hearted</p>
+
+</body>
+
+</html>
+
+
+Now if we scroll our website fixed positioning is fixed
+
+
+

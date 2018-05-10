@@ -1,0 +1,50 @@
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<html>
+<body>
+
+<table width="90%" height="90%">
+
+<tr height="10%">
+<td colspan="4" bgcolor="red" align="center">
+
+<tiles:insertAttribute name="HEADER" />
+
+</td>
+</tr>
+
+
+<tr height="80%">
+<td width="20%" bgcolor="blue" align="left">
+
+<tiles:insertAttribute name="LEFTMENU" />
+
+</td>
+</tr>
+
+
+<tr height="80%">
+<td width="20%" bgcolor="yellow" align="center">
+
+<tiles:insertAttribute name="BODY" />
+
+</td>
+</tr>
+
+
+
+
+<tr height="10%">
+<td colspan="4" bgcolor="red" align="center">
+
+<tiles:insertAttribute name="FOOTER" />
+
+</td>
+</tr>
+
+</table>
+
+
+</body>
+</html>
+

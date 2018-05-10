@@ -1,0 +1,662 @@
+Two typs of tags 
+Single tag : say	<img / >
+Double tag: say	<head>	</head>
+Save as index.html
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>This is the title</title>
+
+</head>
+
+
+</html>
+
+**************************************************************************************************************************************
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>This is the title</title>
+
+</head>
+
+<body>
+i am in the body 
+</body>
+
+</html>
+
+
+**************************************************************************************************************************************
+
+Every website or webpage is made of 2 parts 
+Head :All Browser Information includes keywords,title of webpage ,browser info,
+Body:Pic,image,paragraph syntax is include here
+
+<title>This is the title</title>
+	or 
+<title>
+This is the title</title>
+ 
+
+Now Save As :Give name and type as HyperTextMarkupLanguagefile(........)
+
+Header is of 6 types
+Header1:Biggest title
+Header2:..........
+...........
+Header6:Smallest title
+
+
+Html is white space insensitive i.e doesnot consider whitespaces
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>This is the title</title>
+
+</head>
+
+<body>
+<h1>The World is Beautiful</h1>
+<h2>The World is Beautiful</h2>
+
+Hi Sunny     How R Going 
+
+I love 	Programming
+</body>
+
+</html>
+*************************************************************************************************************************************
+Header:
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	
+</head>
+
+
+<body>
+
+<hr>How Are You<hr>
+</body>
+
+</html>
+
+
+
+
+
+
+**************************************************************************************************************************************
+
+special tag for paragraph is <p>
+We donot need an begining and end of a linebreak
+<>
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>This is the title</title>
+
+</head>
+
+<body>
+<h1>The World is Beautiful</h1>
+<h2>The World is Beautiful</h2>
+
+<p>Hi Sunny     How R Going </p>
+
+<p>I love 	Programming</p>
+</body>
+
+</html>
+
+
+**************************************************************************************************************************************
+
+We donot need an begining and end of a linebreak
+<br />
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>This is the title</title>
+
+</head>
+
+<body>
+The World is Beautiful.<br />The World is Beautiful
+
+<p>Hi Sunny     How R Going </p>
+
+<p>I love 	Programming</p>
+</body>
+
+</html>
+
+
+**************************************************************************************************************************************
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>This is the title</title>
+
+</head>
+
+<body>
+
+<h1>MY WEBSITE !</h1>
+<p> This is my Paragraph</p>
+
+<h1>Welcome !</h1>
+<p> This is my 2nd Paragraph<br /> And I an Done</p>
+
+
+</body>
+
+</html>
+
+
+
+**************************************************************************************************************************************
+
+
+Horizontal Row :more or like a seperator i.e <hr />
+
+
+
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>This is the title</title>
+
+</head>
+
+<body>
+
+<h1>MY WEBSITE !</h1>
+<p> This is my Paragraph</p>
+<hr />
+<h1>Welcome !</h1>
+<p> This is my 2nd Paragraph<br /> And I an Done</p>
+
+
+</body>
+
+</html>
+
+
+
+**************************************************************************************************************************************
+How To Bold or Style Text:
+TellSize:<em>..................</em>
+em:Emphasis
+
+Bold:<strong> ............</strong>
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>This is the title</title>
+
+</head>
+
+<body>
+
+<h1>MY WEBSITE !</h1>
+<p> Hi Guys</p>
+<hr />
+<h1>Welcome !</h1>
+<p> This is my <strong>Sunny's</strong> Paragraph<br /> And <em>I am Done</em></p>
+
+
+</body>
+
+</html>
+
+
+
+**************************************************************************************************************************************
+
+How to add a comment in my website:
+The comment is seen by me and can be ignored by the Browser
+
+<!doctype html>
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+Hi I am <em>Mohan</em> 
+
+<!--change this paragraph-->
+
+<p>I love to Travell and Eat</p>
+
+
+</body>
+
+</html>
+
+
+
+**************************************************************************************************************************************
+
+Links   and Attributes:
+<a>....................</a>
+a: Anchor------------  Mainly used fo link
+
+Attrinutes:It is basically more information that a tag need in order to work
+<a href="with which site I want to link">........................................
+
+
+href:HyperLink reference
+
+Link between my one page to another page which is not mine say(google,flipkart......................etc............)
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<title> This is the Title</title>
+
+</head>
+
+<body>
+
+<a href="http://google.com">This will be a link</a>
+
+</body>
+
+</html> 
+
+
+**************************************************************************************************************************************
+Link between my two pages
+
+Now Create New html file as secondIndex.html
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<title> Second Page</title>
+
+</head>
+
+<body>
+
+This is the second page!
+</body>
+
+</html> 
+
+
+
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<title> This is the Title</title>
+
+</head>
+
+<body>
+
+<a href="secondIndex.html">This will be a link</a>
+
+</body>
+
+</html> 
+
+
+Here my both Html file Is In same directory As long as my web pages are in same folder we can easily link them by just witing the name
+in my 1st html file here index i have to wriet 2nd html file <a href="SecondIndex.html">
+
+
+
+**************************************************************************************************************************************
+
+' " ...etc in html will show improper work
+
+Create a navgation system which makes it easier for the User to go to particular section
+So we nedd to create traget so in order to do that to do a ancor <a name="xysdf"> </a>
+Here we donot need anything in b/w the ancor (a) text because we are not linking to 
+to anything 
+
+<a name="fghjk">:- we need a name for our target and set the destination
+<a href="#fghjk">:-in order to link to the destination
+
+#:it is used to link to a different section of same website.Also know summary to my website
+
+
+
+<!doctype html>
+
+<html>
+
+<head>
+ <title>Sunny's Paragraph on Mobile</title>
+
+</head>
+
+<body>
+
+<a href="#feature">Features</a><br />
+<a href="#advantage">Advantages</a><br />
+<a href="#disadvantage">Disadvantages</a><br />
+<a href="#conclusion">Conclusion</a><br />
+
+<h1>			Mobile Phone            </h1>
+<p>A mobile phone is a type of hand held phone. It is called a mobile phone because it can be carried around.Unlike a traditional landline a mobile phone is not
+ rooted in a cable. In short they are a telephone that you take with you.Another name for mobile phone is cell phone. Mobile phones are typically small electronic
+ devices.</p>
+
+<h2><a name="feature"> </a>Features:Below are the main features of mobile phones.</h2>
+ 
+<p>Hand held.<br />
+Electronic.<br />
+Mobile phones also use SIM cards.<br />
+Some use satellite technology.<br />
+Some have touch screens but others do not.<br />
+Mobile phones can either be on a contract or pay as you go.<br />
+Most mobile phones also have internet access.<br />
+</p>
+
+<h2><a name="advantage"> </a>Advantages: Below are 7 reasons why mobile phones are great.</h2>
+<p>
+Easily portable.<br />
+Handy in emergencies.<br />
+Great for keeping in touch with friends.<br />
+Light weight: these phones are a much more light weight option.<br />
+Internet access: find out anything you like.<br />
+Fun for playing games on.<br />
+A good way to pass the time.<br />
+Maps: no need to be lost with a mobile phone.<br />
+Fashion: having a cellphone is something trendy in many cultures.<br />
+</p>
+
+
+<h2><a name="disadvantage"> </a>Disadvantages: Below are some reasons why mobile phones are not so good.</h2>
+<p>
+Waste of time: phones can sap our precious time.<br />
+A poor substitute for face to face communication.<br />
+Bad for your health as you crane over them.<br />
+Small screens can cause eye strain.<br />
+We can become overly dependent on our phones.<br />
+Risk of data security.<br />
+Lack of focus: overuse of cellphones can shorten our attention span.<br />
+Expensive: these devices can be pricey.<br />
+Peer pressure: sometimes trends force us to buy devices we donot really want.<br />
+</p>
+
+<h2><a name="conclusion"> </a>Conclusion:</h2>
+<p> Mobile phones should be used wisely.</p>
+
+
+
+</body>
+
+</html> 
+
+
+********************************************************************************************************************************************************************
+
+
+How to link to a email address
+mailto:email address(to whom we send)
+If we donot write mailto: then we will get error
+
+<!doctype html>
+
+<html>
+
+<head>
+ <title>Sunny's Paragraph on Mobile</title>
+
+</head>
+
+<body>
+
+<a href="mailto:kshitimohanp@gmail.com">Email Sunny</a>
+
+
+
+</body>
+
+</html> 
+
+
+
+
+
+*********************************************************************************************************************
+
+
+<!doctype html>
+
+<html>
+
+<head>
+ <title>Sunny's Paragraph on Mobile</title>
+
+</head>
+
+<body>
+
+<a href="http://google.com">Google</a>
+
+
+
+</body>
+
+</html> 
+
+Toolkit:
+Now to get more information about google(tag)
+
+
+<!doctype html>
+
+<html>
+
+<head>
+ <title>Sunny's Paragraph on Mobile</title>
+
+</head>
+
+<body>
+
+<a href="http://google.com" title="Nice Search Engine">Google</a>
+
+
+
+</body>
+
+</html> 
+
+
+Here pointing to Google will display Nice Search Engine
+
+******************************************************************************
+
+Add A Image to My WebPage:
+
+To add an image we need an Image
+Now Copy the image in same folder where my html file is there After doing that my image 
+and html file in same folder 
+
+Add img to website: tag used <img src="image name.extension"/>
+
+Image has one attribute called src
+
+<!doctype html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<img src="mypic.jpg"/>
+
+
+</body>
+
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<a href="https://www.youtube.com"><img src="mypic.jpg"/></a>
+
+
+</body>
+
+</html> 
+
+
+Here clicking on my pic will take you to the corrrosponding website
+
+
+
+****************************************************************************************
+How to resize an image:
+
+With the help of height
+height="150"	say
+
+
+Here upload any image but I am gonna shrink or resize the image
+
+<!doctype html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<img src="mypic.jpg" height="150"/>
+
+
+</body>
+
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<img src="mypic.jpg" height="150"/>
+<img src="pic1.jpg" height="150"/>
+
+
+</body>
+
+</html> 
+
+
+
+
+
+
+***********************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,951 @@
+
+Tables:It is a easy way to organize information in our  website in rows or columns
+Tables consistes of rows and column
+<table>All the Information </table>
+
+<tr>1 row of the table</tr>make a table with rows
+
+tr:Table Row:for Row
+
+<td> </td>
+td:Table Data :for Coluumn
+
+
+
+Even though we have a table but we donot have data inside we get empty screen
+
+To Add border to table: <table border="How thick we need our Border">
+
+We can has as many rows and colums in table
+
+In table we can add link,header,paragraph,image or any text
+
+<!doctype html>
+
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+
+
+<table border="2">	 
+	
+	<tr>
+	
+	<td> Paneer</td>
+	<td> <a href="https://www.youtube.com">YouTube </a></td>
+	<td> Banana</td>
+	
+	</tr>
+	
+	<tr>
+	
+	<td>Pizza </td>
+	<td> Burger</td>
+	<td> <img src="mypic.jpg" height="20"/></td>
+
+	</tr>
+
+</table>
+
+
+</body>
+
+</html>
+
+
+
+
+
+ 
+
+
+
+*****************************************************************************************************************
+
+Table Headers:
+
+
+
+th:Table Header	:And this could be header for our columns
+
+
+
+
+
+
+
+
+<!doctype html>
+
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+
+
+<table border="2">	 
+	
+	<tr>
+		<th> Name</th>
+		<th> Movie</th>
+		<th> Who They Love</th>
+	</tr>
+		
+	<tr>
+
+		<td>Natalie Portman</td>
+		<td>Garden State</td>
+		<td>Sunny</td>
+
+	</tr>
+
+	<tr>
+		<td>Rachel</td>
+		<td>Mean Girls</td>
+		<td>Sunny</td>
+
+
+	</tr>
+
+</table>
+
+
+</body>
+
+</html>
+
+
+
+
+
+*******************************************************************************************88
+Col span:
+
+colspan="how man column we want to span that piece of data?";
+
+
+
+<!doctype html>
+
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+
+
+<table border="2">	 
+	
+	<tr>
+		<th colspan="2"><h3>Odd People</h3></th>
+	</tr>
+		
+	<tr>
+		<th >Type</th>
+		<th >Reason</th>
+	
+	</tr>
+	<tr>
+
+		<td >Cat People </td>
+		<td >7 cats is just too many</td>
+		
+	
+	</tr>
+		<td >Loud People</td>
+		<td >Sure turn that music up, it only 3 am</td>
+			
+
+	<tr>
+
+
+	</tr>
+
+</table>
+
+
+</body>
+
+</html>
+
+
+
+
+//<th colspan="2"><h3>Odd People</h3></th>:Span that accross two column
+
+Note:If colspan value is more than number of column than it will span across that many number of column 
+
+But If colspan value is less than number of column than it will span across the value of  colspan
+
+
+
+
+
+***************************************************************************************************************
+
+Table width: By default whenever we create a table its going to adjust the width depend on largest number of data inserted for that particular column
+
+width:
+
+
+In below we have width of 500 pixels
+
+<!doctype html>
+
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+
+
+<table border="2" width="500">	 
+	
+	<tr>
+		<th colspan="2"><h3>Odd People</h3></th>
+	</tr>
+		
+	<tr>
+		<th >Type</th>
+		<th >Reason</th>
+	
+	</tr>
+	<tr>
+
+		<td >Cat People </td>
+		<td >7 cats is just too many</td>
+		
+	
+	</tr>
+		<td >Loud People</td>
+		<td >Sure turn that music up, it only 3 am</td>
+			
+
+	<tr>
+
+
+	</tr>
+
+</table>
+
+
+</body>
+
+</html>
+
+*************************************************************
+
+
+width=100% then its going to adjust depend on 100% of width of my website
+
+
+
+
+<!doctype html>
+
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+
+
+<table border="2" width="100%">	 
+	
+	<tr>
+		<th colspan="2"><h3>Odd People</h3></th>
+	</tr>
+		
+	<tr>
+		<th >Type</th>
+		<th >Reason</th>
+	
+	</tr>
+	<tr>
+
+		<td >Cat People </td>
+		<td >7 cats is just too many</td>
+		
+	
+	</tr>
+		<td >Loud People</td>
+		<td >Sure turn that music up, it only 3 am</td>
+			
+
+	<tr>
+
+
+	</tr>
+
+</table>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+*****************************************************************************************************************
+
+Self Padding and Self Spacing :
+
+
+Self Padding:gives space b/w text and border	
+
+celllpadding=""
+
+
+
+
+<!doctype html>
+
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+
+
+<table border="2" cellpadding="10">	 
+	
+		
+	<tr>
+		<th >Type</th>
+		<th >Reason</th>
+	
+	</tr>
+	<tr>
+
+		<td >Cat People </td>
+		<td >7 cats is just too many</td>
+		
+	
+	</tr>
+		<td >Loud People</td>
+		<td >Sure turn that music up, it only 3 am</td>
+			
+
+	<tr>
+
+
+	</tr>
+
+</table>
+
+
+</body>
+
+</html>
+
+
+
+
+Cell Spacing:Space b/w individual cells themselvs
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+
+
+<table border="2" cellspacing="10">	 
+	
+		
+	<tr>
+		<th >Type</th>
+		<th >Reason</th>
+	
+	</tr>
+	<tr>
+
+		<td >Cat People </td>
+		<td >7 cats is just too many</td>
+		
+	
+	</tr>
+		<td >Loud People</td>
+		<td >Sure turn that music up, it only 3 am</td>
+			
+
+	<tr>
+
+
+	</tr>
+
+</table>
+
+
+</body>
+
+</html>
+
+
+*******************************************************************************************************************************
+
+
+Valid Doctype:
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+List:
+
+Unordered List:It take the idoms and make them appear as bullet point
+
+
+When we need To add idoms to our list we need add the tag li
+li:list item
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+<ul>
+	<li>New Sunclasses</li>
+	<li>Cristmas Tree</li>
+	<li>Paintings for my walls</li>
+	<li>Pizza</li>
+
+
+</ul>
+
+</head>
+
+
+<body>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+Ordered list:Here things are goining to appear in number and rest are same as 
+UnOrdered list
+
+i.e Automatically numbering  done
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+<ol>
+	<li>go to youtube</li>
+	<li>type in DurgaSoft</li>
+	<li>watch all the vedios</li>
+	<li>eat burger</li>
+
+
+</ol>
+
+</head>
+
+
+<body>
+
+
+
+</body>
+
+</html>
+
+
+
+Diffrence b/w XHTML and CSS:
+
+XHTML is basic building block to our website like images,headings,text links etc..
+CSS it makes nice layout like adds color,changes fonts ...etc i.e Like a designer
+
+
+
+
+Cascading Style Sheet:
+
+For CSS we need the following on the head
+
+	<style type="text/css">
+
+	<style>
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<style type="text/css">
+
+	
+	</style>
+
+
+
+</head>
+
+
+<body>
+
+This is normal Text 
+<p>this is paragraph</p>
+
+</body>
+
+</html>
+
+
+
+
+
+In order to change any elements on out website In between our Style Text we need to type 
+the name of that elements 
+
+p {	color	:	blue	}	
+      	property		value	
+
+
+
+p {color:blue;font-family:arial;}	
+
+css is white space sensitive
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<style type="text/css">
+	
+	p {color:blue;font-family:arial;}	
+	
+	</style>
+
+
+
+</head>
+
+
+<body>
+
+This is normal Text 
+<p>this is paragraph</p>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Instead of having red,green,blue ....... as colour we can have RGB value
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<style type="text/css">
+	 
+	h1 {color:red;}	
+	
+	</style>
+
+
+
+</head>
+
+
+<body>
+<h1>Kshiti Mohan Paul</h1>
+
+
+<p>
+Programming is better than having a GirlFriend!Programming is better than having a GirlFriend!Programming is better than having a GirlFriend!
+Programming is better than having a GirlFriend!
+Programming is better than having a GirlFriend!
+Programming is better than having a GirlFriend!Programming is better than having a GirlFriend!Programming is better than having a GirlFriend!Programming is better than having a GirlFriend!
+Programming is better than having a GirlFriend!
+</p>
+
+</body>
+
+</html>
+
+
+
+
+For space out the line in paragraph i.e space between my lines we use linehide properties
+By default it is 100%
+p {line-height:130%}
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<style type="text/css">
+	 
+	h1 {color:#330000;}	
+	p {line-height:130%}	
+	</style>
+
+
+
+</head>
+
+
+<body>
+<h1>Kshiti Mohan Paul</h1>
+
+
+<p>
+Programming is better than having a GirlFriend!Programming is better than having a GirlFriend!Programming is better than having a GirlFriend!
+Programming is better than having a GirlFriend!
+Programming is better than having a GirlFriend!
+Programming is better than having a GirlFriend!Programming is better than having a GirlFriend!Programming is better than having a GirlFriend!Programming is better than having a GirlFriend!
+Programming is better than having a GirlFriend!
+</p>
+
+</body>
+
+</html>
+
+**********************************************************************************************************************************************************
+
+
+
+
+
+
+
+font-weight:- how thick the font is .500 is default values
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<style type="text/css">
+	ul {font-weight:bold}
+	ol {font-style:italic}	 
+	</style>
+
+</head>
+
+<body>
+
+	<ul>
+	<li>Unordered List</li>
+	</ul>
+
+	<ol>
+	<li>Ordered List</li>
+	</ol>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+Allign Text:
+	Left justified is by default 
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	h3 {text-align:center;}
+	</style>
+
+</head>
+
+<body>
+
+	<h3>Sunny's Block</h3>
+</body>
+
+</html>
+********************************************************************************************
+XHTML is white space insensitive
+
+text indent:25px(say)	//number of pixel
+It will intdent 25pixel
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	h3 {text-align:center;}
+	p {text-indent:25px}	
+</style>
+
+</head>
+
+<body>
+
+	<h3>Sunny's Block</h3>
+	<p>This is the best Day everThis is the best Day everThis is the best Day everThis is the best Day everThis is the best Day everThis is the best Day ever
+This is the best Day ever
+This is the best Day everThis is the best Day everThis is the best Day ever</p>
+</body>
+
+</html>
+
+
+
+
+Change overall font or overall colour of text as well as baground of entire webpage we need
+to added a body element
+
+baground-color:blue		//to change baground colour to blue
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	body {
+		background-color:blue;
+	}
+	h3 {text-align:center;}
+	p {text-indent:25px}	
+
+	
+
+</style>
+
+</head>
+
+<body>
+
+	<h3>Sunny's Block</h3>
+	<p>This is the best Day everThis is the best Day everThis is the best Day everThis is the best Day everThis is the best Day everThis is the best Day ever
+This is the best Day ever
+This is the best Day everThis is the best Day everThis is the best Day ever</p>
+</body>
+
+</html>
+
+
+
+
+color :white;		//color white property to the body
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	body {
+		background-color:blue;
+		color :white;
+	}
+	h3 {text-align:center;}
+	p {text-indent:25px}	
+
+	
+
+</style>
+
+</head>
+
+<body>
+
+	<h3>Sunny's Block</h3>
+	<p>This is the best Day everThis is the best Day everThis is the best Day everThis is the best Day everThis is the best Day everThis is the best Day ever
+This is the best Day ever
+This is the best Day everThis is the best Day everThis is the best Day ever</p>
+</body>
+
+</html>
+
+**********************************************************************************
+
+How to add images as background:
+	background-image:url (pic2.jpg);	
+
+MY image should be in same folder where my html file i am is working in
+By default is repeat by left and right, and up and down
+
+In order not to repeat :
+	background-repeatno-repeat;	
+
+background-repeat:x;		///repeat in x axis
+background-repeat:y;		///repeat in y axis	
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	body {
+	background-image:url (pic2.jpg);	
+	background-repeat:no-repeat;	
+
+	}
+
+	
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+</body>
+
+</html>
+
+
+
+	background-position:how far from left hand side we move,how far from top we want to move	
+px:pixel
+
+we can also use like 50 % of my screen i want to move 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+"http://www.w3.org./TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+	<style type="text/css">
+	body {
+	background-image:url (pic2.jpg);	
+	background-repeat:no-repeat;	
+	background-position:	10px,60px;
+
+	}
+
+	
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+</body>
+
+</html>
+
