@@ -1,0 +1,48 @@
+package com.sunny.log4j;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
+public class TestLab9 {
+
+	static {
+
+		PropertyConfigurator.configure("src/log4j.xml");
+	}
+	
+
+
+	static Logger log=Logger.getLogger("TestLab9");
+	
+	
+	public static void main(String[] args) {
+
+
+		log.info("Main Started");
+		log.debug("No Values as CommandLineArgument :"+args.length);
+			
+		if(args.length==0){
+			log.warn("No CommmandLineArgument Specified Please Specify valid value");
+		}
+		
+		log.debug("1st CLA value in Main :"+args[0]);
+		
+		log.debug("2nd CLA value in Main :"+args[1]);
+		
+		log.info("Creating SunnyOperator ");
+		
+		SunnyOperator op=new SunnyOperator();
+		log.info("SunnyOperator object is Created");
+		
+		int remd=op.getRemainder(args[0], args[1]);
+		System.out.println("Remainder in main method() :"+remd);
+		
+		log.info("Main Completed");
+	}
+}
+
+
+
+//XML file log4j.xml
+
+//In log4j.xml 1st configure appender than configure root

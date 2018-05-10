@@ -1,0 +1,270 @@
+Log4j is a tool in Java Application to help the programmer to log the statements to a variety output target.It is implemented by Apache(Only Vaid for JAVA code but
+not for other languages say C,C++........etc )
+
+When we are developing a code we may get the requirement to do the following tasks:-
+	~To UnderStand the flow of application
+	~To log some error messages or some information or some warning or something else to log file
+
+So to do the above tasks we may write some SOP statements in the code But doing this we may get maintainence problem.
+So with Log4j it is possible to enable logging at runtime without modifying the application binary    
+
+
+Logging API		:-provided by Java vendor	java.util.logging package
+
+LOG4J provide more facility in order to other API
+
+
+TO USE LOG4J iin our appln	:-
+			1.Build the class path for as log4j JAR file
+				JAVA PROJECT		:-Build class path as log4j jar file 
+				Dynamic Web Project 	:-Copy log4j jar file in WEB-ING/lib  
+			2.Configure the log4j System
+			3.Create or get the Logger object 	:-getLogger(class type or String type object )
+			4.Used the required method to log the message
+
+
+
+
+
+Logger Class:-Logger class provides a variety of methods to handle logging activities. The Logger class does not allow us to instantiate a new Logger instance but
+	       it provides two static methods for obtaining a Logger object -
+		
+	public static Logger getRootLogger();
+	public static Logger getLogger(String name);
+
+
+	public static Logger getRootLogger()	:-It returns the application instance's root logger and it does not have a name.
+
+	public static Logger getLogger(String name or class name) :-It is obtained by passing the name of the logger. The name of the logger can be any string 
+						           you can pass, usually a class or a package name
+
+
+Main Elements of Log4j	:-
+
+1.Appenders	:-The Appenders controls where the message will be logged.Appenders available are 
+	a.Console Appender	:-Appends the log event to System.out or System.err using layout specified by the user. The default target is System.out
+	b.File Appender	:-Append log event to a file 
+	c.Rolling Appender	:-It extends FileAppender to backup the log files when they reached cretain size.Backup will be done automatically 
+	d.SMTP Appender	:-It sends the e-mail when a specific logging event occur typically an errors or fatal errors 
+	e.DB Appender	:-Appends the messages in the Database
+
+2.Layouts		:-The Appender must have an associated Layout so it is known how to format the output. i.e where we want the login information about Appender 
+	There are three types of Layout availables:-
+	~HTML Layout formats the output as a HTML table
+	~Patttern Layout formats the outputs bases on a conversion pattern specified or if none is specified the default conversion is specified
+	~Siimple Layout formats the output in a very simple manner, it prints the Level then a dash(-) and than log message 
+
+3.Priority 		:-Priority represent the inpotance of message
+
+
+		Log4j Levels:-
+
+		TRACE				:-trace(...........) 
+		DEBUG				:-debug(...........) 
+		INFO	:-Information message	:-info(...........) 	
+		WARN	:-It is a warning message	:-warn(...........) 
+		ERROR 	:-JUST like Exception	:-error(...........) 
+		FATAL 	:-			:-fatal(............) 
+
+
+		ALL
+		OFF
+
+
+		~TRACE_INT	:-
+				public static final int TRACE_INT	:-TRACE level integer value.
+
+
+		~OFF		:-
+				public static final Level OFF		:-The OFF has the highest possible rank and is intended to turn off logging.
+								i.e donot log any messages
+
+
+		~ALL		:-	
+				public static final Level ALL		:-The ALL has the lowest possible rank and is intended to turn on all logging.
+								i.e log all messages
+
+		~FATAL		:-
+				public static final Level FATAL		:-The FATAL level designates very severe error events that will presumably
+								 lead the application to abort.
+
+
+
+		~ERROR		:-
+				public static final Level ERROR		:-The ERROR level designates error events that might still allow the
+								 application to continue running.
+
+
+
+		~WARN		:-	
+				public static final Level WARN		:-The WARN level designates potentially harmful situations.
+
+
+
+		~INFO		:-
+				public static final Level INFO		:-The INFO level designates informational messages that highlight the
+								 progress of the application at coarse-grained level.
+
+
+		~DEBUG		:-
+				public static final Level DEBUG		:-The DEBUG Level designates fine-grained informational events that are
+								 most useful to debug an application.
+
+
+		~TRACE		:-
+				public static final Level TRACE		:-The TRACE Level designates finer-grained informational events than the DEBUG
+
+
+		
+
+For configuration log4j system we have some config data configurator:-
+		
+		1.Basic Configurator
+		2.Property Configurator
+		3.DOM Configurator(mainly when we are configuring XML Files) 
+
+NOTE	:-Configurator allows us to specify APPENDERs and LAYOUTs		
+
+				A.Basic Configurator
+
+1.BasicConfigurator.configure();
+	When we are using BasicConfigurator than by default 
+		~SimpleLayout will be used 
+		~ConsoleAppender will be used 
+
+
+
+2.BasicConfigurator.configure(Appender appnd);
+	We can specify the Appender and Layout explicitly 
+	
+	Conversion Symbol	:-
+	%p	:-Priority of Message
+	%t	:-Current Thread
+	%d	:-Current Date and Time 
+	%C	:-Fully Qualified class Name
+	%c	:-Logger Name 
+	%F	:-File Name 
+	%M	:-Method Name%
+	%m	:-Actual Message 
+	%l	:-Full Information(ClassName, methodName, JavaFileName, Line number )%
+	%L	:-Line Number \
+	%n	:-New Line
+
+NOTE	:-JDK also comes with Logging facility(i.e has its own Logging API) but Apachae Log4j is better than any one(SUN logging Framework)
+
+
+
+				B.Property Configurator
+
+If we are using BasicConfigurator and if we want to change the Log4j System info like appender,layout or level(priority) than we need to change the java code so it 
+will give maintanance problem So to solve the above problem the PropertyConfigurator is being used
+
+	To use the PropertyConfigurator we can do the following 
+		We need to write say log4j.properties file 
+		Specify the reqired Appenders,Layout and Level(Priority) in log4j.properties file
+		Invoke the configure() method in my Java or Any code by passing src/log4j.properties(fully qualified file name) file as parameter 
+
+	USES:-	PropertyConfigure.configure("src/log4j.properties file");
+
+
+NOTE	:-If we are working with CommandPrompt than properties file should be in CurrentDirectory
+
+NOTE	:-The log4j API provides the org.apache.log4j.jdbc.JDBCAppender object, which can put logging information in a specified database.
+
+	JDBCAppender Configuration	:-
+
+
+	Property		Description
+
+	bufferSize		Sets the buffer size. Default size is 1.
+	driver		Sets the driver class to the specified string. If no driver class is specified, it defaults to sun.jdbc.odbc.JdbcOdbcDriver.
+	layout		Sets the layout to be used. Default layout is org.apache.log4j.PatternLayout.
+	password		Sets the database password.
+	sql		Specifies the SQL statement to be executed every time a logging event occurs. This could be INSERT, UPDATE, or DELETE.
+	URL		Sets the JDBC URL.
+	user		Sets the database user name.
+
+
+
+
+
+Using PropertyConfigurator(JDBC Appender & Pattern Layout)
+	1.sunny-log4j.property
+	2.TestLab6
+	3.connect to say here MySql and change data base to sunny(use sunny)
+		mysql> create table sunnylog4j(Dated varchar(50) not null,Logger varchar(50) not null,Level varchar(10),Message varchar(1000) not null);	 
+
+
+	*Dated will calculate nanosecond also 
+
+
+
+
+
+
+Using PropertyConfigurator(Multiple Appenders )
+
+		Apppender name can be anything (eg.	log4j.rootLogger=TRACE,myfile,myconsole)
+
+
+
+Using PropertyConfigurator(SMTP Appenders )		TestLab8 and property file sunny3-log4j.properties
+	To use this I have download javax.mail-1.5.0.jar file 
+	Now add jars to the java path
+
+
+
+smtp port number can be 465,	587,	25
+
+465,	587,  are standard port number
+
+
+
+	WE need to turn ON Allow less secure apps	i.e Allow less secure apps:ON
+	but if Allow less secure apps:OFF than we get exception 	javax.mail.AuthenticationFailedException:
+
+
+
+
+
+				3.DOM Configurator
+
+It is used to configure Log4j for XML file
+	To configure log4j using XML file we use DOMConfigurator.configure() method in our JAVA appliccation or Dynamic Web Project
+
+
+
+An XML document with correct syntax is called "Well Formed".
+
+An XML document validated against a DTD(i.e dtd extension) is both "Well Formed" and "Valid".
+
+
+
+
+Using Log4j with web application:-
+	We need to configure Log4j system only once and than we can use say ServletContextListeners
+
+
+	Steps to Configure Log4j:-
+		Copy log4j-1.2.17 jar to WEB-INF/lib folder
+		Write ContextListeners to Initilize the Log4j system at Container Start-UP
+
+
+
+
+
+
+Welcome to The Apache Jakarta™ Project (htttp://jakarta.apache.org)
+	Founded in 1999, the Jakarta Project housed a diverse set of popular open source Java solutions. In 2005, as a part of creating a flatter Apache Software 
+	Foundation, Jakarta subprojects began to become full top-level Apache projects. This process has continued to this day, all subprojects have now left the
+	Jakarta project to become top level projects, join other TLPs (Commons), or in some cases been retired.
+
+
+
+
+
+
+
+
+
+
